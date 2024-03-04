@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #353440;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.acesso{
+    color: white;
+    background-color: #353440;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 3px;
+}
+h1{
+    font-size: 2.25em;
+
+}
+h4 {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+.bloco1 {
+    max-width: 95%;
+}
+.textosbloco1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.imgebook {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+img {
+    width: 300px;
+}
+.primeirobotao {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.precoantigo {
+    color: red;
+}
+.precoatual{
+    display: flex;
+    flex-direction: row;
+    align-items:self-start;
+}
+.preco {
+    color: seagreen;
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-shadow: 1px 1px 2px #353440;
+}
+.botao {
+    background-color: seagreen;
+    border-radius: 5px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 3px 3px 3px #353440;
+}
+.storytelling {
+    max-width: 95%;
+    text-align: center;
+}
+
+
+
