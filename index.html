@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
     <title>2k com Ebook</title>
 </head>
 <body>
     <p class="acesso">"ACESSO IMEDIATO"</p>
     <h1>2k com Ebook</h1><!--headline, deve ser persuasiva e aguçando curiosidade-->
-    <h4>A estrutura magna para vender ebooks!</h4><!--Subheadline deve reforçar a curiosidade sobre o que é!-->
+    <h4 class="subhead">A estrutura magna para vender ebooks!</h4><!--Subheadline deve reforçar a curiosidade sobre o que é!-->
 
     <!--Primeira parte que deve chamar bastante a atenção de forma especifica para o que é o produto. Pode ser texto, com imagens ou video. Deve seguir um botão de compra logo abaixo.-->
     <div class="bloco1">
         <div class="textosbloco1">
             <p>Seja seu ebook ou não. Seja seu conteúdo ou não.</p>
-            <p>Descubra a estrutura e estratégia mais utilizada por todos os grandes players das vendas online e marketing direto!</p>
+            <p>Descubra a estrutura estratégica mais utilizada por todos os grandes players das vendas online e marketing direto!</p>
         </div>
         <div class="imgebook">
             <img src="img/Captura de tela 2024-02-24 194002.png" alt="imgEbook">
@@ -27,17 +29,38 @@
         <p>De <s class="precoantigo">R$97,00</s></p>
         <div class="precoatual">
             <p>Por:</p>
-            <p><strong class="preco">R$14,90</strong> </p>
+            <p><strong class="preco">R$47,90</strong> </p>
+        </div>
+        <div class="firstbutton">
+            <button type="button" class="botao">Comprar agora!</button>
         </div>
     </div>
+
 
     <!--Os leitores que precisam de mais reforço para a compra, seguirão rolando a pagina por mais conteúdo. Então ess próxima parte pode ser colocado um storytelling!-->
     <div class="storytelling">
         <!--Ideia para um vídeo-->
-        <p>Se você quer vender online e ja inicia do jeito errado, todo seu trabalho é em vão. Pois não adianta ter o melhor produto e não saber como vender de forma correta. </p>
+        
+        <h4>"O PREÇO É MENOR QUE UMA PIZZA MAS O VALOR É DA LIBERDADE!"</h4>
+        <p> Veja os resultados de algumas pessoas que começaram a vender ebook usando uma das estruturas que ensino:</p>
 
-    </div>
-    <div class="blocoslides">
+    
+        <div class="container-slider">
+            
+            <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img src="img/prova1.jpg" alt="prova1" class="slider on">
+                <img src="img/prova2.jpg" alt="prova2" class="slider">
+                <img src="img/prova3.jpg" alt="prova3" class="slider">
+                <img src="img/prova4.jpg" alt="prova4" class="slider">
+                <img src="img/prova5.jpg" alt="prova5" class="slider">
+                <img src="img/prova6.jpg" alt="prova6" class="slider">
+                <img src="img/prova7.jpg" alt="prova7" class="slider">
+                <img src="img/prova8.jpg" alt="prova8" class="slider">
+            </div>
+            <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
+            
+        </div>
 
     </div>
 
@@ -45,7 +68,30 @@
 
     <!--Benefícios com bullet points-->
     <div class="bulletpoints">
-
+        <h3>PARA QUEM É ESTE EBOOK?</h3>
+        <ul>
+            <li>Pra quem quer começar a vender pra ontem na internet mesmo sem ter produto!</li>
+            <li>Pessoas que não querem perder tempo com conteúdo de ensinamentos razos e que não levam a lugar nenhum!</li>
+            <li>Para quem quer descobrir como vender qualquer coisa e sempre, não só em fases de 'FEBRES" na internet</li>
+            <li>Para quem quer construir uma renda significativa na internet</li>
+        </ul>
+    </div>
+    <div class="bonus">
+        <h3 class="tituloBonus">BÔNUS</h3>
+        <p>Três ebooks secretos que mais influenciaram no meu desenvolvimento para vendas. É aqui que você começa a deixar de ser amador e descobre <strong>EXECUÇÕES PROFISSIONAIS QUE REALMENTE TRAZEM RESULTADOS!</strong></p><BR>
+    </div>
+ 
+    
+   
+    <div class="lastbutton">
+        <p>De <s class="precoantigo">R$97,00</s></p>
+        <div class="precoatual">
+            <p>Por:</p>
+            <p><strong class="preco">R$47,90</strong> </p>
+        </div>
+    </div>
+    <div class="firstbutton">
+        <button type="button" class="botao">Comprar agora!</button>
     </div>
 
     <!--Provas sociais-->
@@ -57,10 +103,6 @@
     <!--FAQ: perguntas mais importântes que as pessoas costumam ter antes de comprar. "para produtos mais caros"-->
     <!--Botão de dúvidas pelo whatsapp."Para produtos mais caros"-->
 
-
-
-
-
-
+    <div class="rodape" >Copyright © 2024 TickProtrading. Todos os direitos reservados.</div>
 </body>
 </html>
