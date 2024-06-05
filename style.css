@@ -1,143 +1,211 @@
-*{
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
-body{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 18px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
 }
-.acesso{
+.acesso {
     background-color: black;
     width: 100%;
     color: white;
-    padding: 7px;
+    padding: 5px;
     text-align: center;
 }
-.centralizada{
+.centralizada {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     width: 98%;
-       
+    max-width: 100%; /* Garantir que não ultrapasse a largura da tela */
+    padding: 20px 0; /* Adicionar padding para evitar sobreposição */
 }
-.headsubhead{
-    padding: 12px 0 12px 0;
+.headsubhead {
+    padding: 12px 0;
+    max-width: 100%;
 }
 .headsubhead h1 {
-
     padding: 7px;
 }
-.boximg{
-    height: 350px;
+.boximg {
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: auto;
+    width: 98%; /* ajuste de largura */
+    max-width: 98%; /* Ajuste de largura */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 .imgebook {
-    position:absolute;
-    width: 350px;
-    transform: rotate(270deg);
-    padding: 8px;
-    
+    width: 100%;
+    max-width: 320px;
+    padding: 5px;
 }
-.primeirobotao{
-    padding: 20px;
+.primeirobotao {
+    padding: 10px;
     font-size: 23px;
+    width: 250px;
+    margin-bottom: 20px; /* Espaço abaixo do botão */
+    display: flex;
+    flex-direction: column;
 }
-.de{
+.de {
     text-align: left;
 }
-.precoantigo{
+.precoantigo {
     color: red;
 }
-.precoatual{
-   display: flex;
-   padding-bottom: 7px;
+.precoatual {
+    display: inline-flex;
+    flex-direction: row; /* Ajustar a disposição para coluna */
+    align-items: left; /* Alinhar os itens à esquerda */
+    padding-bottom: 7px;
 }
 .por {
     text-align: left;
+    display: inline-flex;
 }
-.preco{
+.preco {
     color: green;
-    font-size: 52px;
+    font-size: 43px; /* Reduzir tamanho da fonte para melhor ajuste em telas menores */
 }
-.botao{
-    font-size: 32px;
+.botao {
+    font-size: 20px; /* Ajustar o tamanho da fonte */
     background-color: rgb(0, 245, 0);
-    padding: 5px 7px;
+    padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
 }
-.botao:hover{
+.botao:hover {
     background-color: black;
-    color:  rgb(0, 245, 0);
-    transform: scale(1.1)
+    color: rgb(0, 245, 0);
+    transform: scale(1.1);
 }
-.container-slider{
-    width: 95%;
-    height: 80vh;/*quando for iphone SE = 100vh*/
+.container-slider {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
+    margin-bottom: 20px; /* Espaço abaixo do slider */
+    position: relative; /* Para posicionar os botões corretamente */
+    padding-top: 10px;
+    
 }
-
-#prev-button, #next-button{
+#prev-button,
+#next-button {
     width: 30px;
     height: 30px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    position: absolute; /* Para colocar os botões dentro do container */
+    top: 50%;
+    transform: translateY(-50%);
 }
-#prev-button img, #next-button img {
+#prev-button {
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg); /* Rotacionar o botão anterior */
+}
+#next-button {
+    right: 10px;
+}
+#prev-button img,
+#next-button img {
     width: 100%;
     height: 100%;
 }
-#prev-button {
-    transform: rotate(180deg);
-}
-.container-images{
+.container-images {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-
+    width: 98%;
+    max-width: 98%; /* Ajuste adicional para evitar transbordamento */
+    overflow: hidden; /* Esconder as imagens fora do contêiner */
+   
+  
 }
 .slider {
     opacity: 0;
-    transition: opacity .2s;
+    transition: opacity 0.2s;
     position: absolute;
     width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
     border-radius: 10px;
-  }
-  
-  .on {
+    object-fit: cover
+}
+.slider.on {
     opacity: 1;
-  }
-  .bulletpoints{
+    position: relative;
+}
+.bulletpoints {
     padding: 15px;
-  }
-  .bulletpoints h3{
+    margin-bottom: 20px; /* Espaço abaixo dos bullet points */
+}
+.bulletpoints h3 {
     padding: 7px;
-  }
-  .bonus{
+}
+.bonus {
     background-color: rgb(163, 255, 155);
     border-radius: 15px;
     padding: 15px;
     margin: 15px;
-  }
-  .bonus h3{
+    margin-bottom: 20px; /* Espaço abaixo do bônus */
+}
+.bonus h3 {
     padding: 7px;
-  }
-  .rodape{
+}
+.rodape {
     font-size: 15px;
     padding: 15px;
-  }
+    text-align: center; /* Centralizar o texto no rodapé */
+}
+/* Ajustes adicionais */
+.container-slider img,
+.container-images img {
+    display: block; /* Garante que as imagens respeitem o espaço ao seu redor */
+    width: 75%;
+    height: auto; /* Permite que a altura das imagens seja ajustada automaticamente */
+   /*object-fit: cover; /* Mantém a proporção original das imagens e as ajusta ao tamanho do contêiner */
+}
+
+@media (min-width:768px){
+    body{
+        font-size: 20px;
+    }
+    .centralizada{
+        max-width: 90%;
+    }
+    .imgebook{
+        width: 350px;
+    }
+    .container-slider{
+        width: 500px;
+    }
+    .slider{
+        max-width: 350px;
+    }
+    #prev-button, #next-button{
+        border: none;
+        background-color: transparent;
+    }
+    .firstbutton {
+       width: 250px;
+    }
+    .botao{
+        font-size: 30px;
+    }
+}
+
+
