@@ -46,8 +46,7 @@ body {
     margin-bottom: 20px; /* Espaço abaixo da imagem */
 }
 .imgebook {
-    width: 100%;
-    max-width: 320px;
+    width: 280px;
     padding: 5px;
 }
 .primeirobotao {
@@ -180,7 +179,7 @@ body {
    /*object-fit: cover; /* Mantém a proporção original das imagens e as ajusta ao tamanho do contêiner */
 }
 
-@media (min-width:768px){
+@media (min-width:481px) and (max-width: 768px){
     body{
         font-size: 20px;
     }
@@ -188,7 +187,7 @@ body {
         max-width: 90%;
     }
     .imgebook{
-        width: 350px;
+        width: 280px;
     }
     .container-slider{
         width: 500px;
@@ -207,5 +206,66 @@ body {
         font-size: 30px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Seus estilos específicos para este intervalo de largura */
+    body {
+        font-size: 17px;
+    }
+    .centralizada {
+        max-width: 85%;
+    }
+    .imgebook {
+        width: 320px;
+    }
+    .container-slider {
+        width: 450px;
+    }
+    .slider {
+        max-width: 400px;
+    }
+    #prev-button, #next-button {
+        border: none;
+        background-color: transparent;
+    }
+    .firstbutton {
+        width: 300px;
+      
+        text-align: left;
+    }
+    .botao {
+        font-size: 28px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Estilos específicos para laptops médios */
+    body{
+        font-size: 18px;
+        width: 70%;
+        margin: auto;
+    }
+    .slider {
+        max-width: 250px;
+    }
+    .container-slider {
+        width: 450px;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+    body {
+        font-size: 19px;
+        width: 70%;
+        margin: auto;
+
+    }
+    .slider{
+        max-width: 300px;
+    }
+    .container-slider {
+        width: 450px;
+    }
+
+}
+
 
 
